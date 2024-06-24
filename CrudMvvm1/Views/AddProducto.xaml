@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CrudMvvm1.Views.AddProducto"
+             xmlns:viewModel="clr-namespace:CrudMvvm1.ViewModels"
+             x:DataType="viewModel:AddProductoViewModel"
+             
+             Title="Listado de Productos">
+    <VerticalStackLayout Padding="30,0,30,0" Spacing="5" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Nombre Producto:" />
+        <Entry Text="{Binding Nombre}" Keyboard="Text" />
+
+        <Label Text="Proveedor:" />
+        <Entry Text="{Binding Proveedor}" Keyboard="Text" />
+
+        <Label Text="Precio Compra" />
+        <Entry Text="{Binding Precio_compra}" Keyboard="Numeric" />
+
+        <Label Text="Total" />
+        <Entry Text="{Binding Total}" Keyboard="Numeric" />
+
+
+        <Button Text="Guardar" Command="{Binding AddUpdateCommand}" />
+    </VerticalStackLayout>
+</ContentPage>
