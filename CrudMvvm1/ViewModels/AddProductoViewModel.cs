@@ -22,13 +22,13 @@ namespace CrudMvvm1.ViewModels
         private string nombre;
 
         [ObservableProperty]
-        private string proveedor;
+        private string direccion;
 
         [ObservableProperty]
-        private double precio_compra;
+        private string celular;
 
         [ObservableProperty]
-        private double total;
+        private string pais;
 
         private readonly ProductoService service;
 
@@ -41,9 +41,9 @@ namespace CrudMvvm1.ViewModels
         {
             Id = producto.Id;
             Nombre = producto.Nombre;
-            Proveedor = producto.Proveedor;
-            Precio_compra = producto.Precio_compra;
-            Total = producto.Total;
+            Direccion = producto.Direccion;
+            Celular = producto.Celular;
+            Pais = producto.Pais;
             service = new ProductoService();
         }
 
@@ -61,9 +61,9 @@ namespace CrudMvvm1.ViewModels
                 {
                     Id = Id,
                     Nombre = Nombre,
-                    Proveedor = Proveedor,
-                    Precio_compra = Precio_compra,
-                    Total = Total,
+                    Direccion = Direccion,
+                    Celular = Celular,
+                    Pais = Pais,
                 };
 
                 if (producto.Nombre != null || producto.Nombre != "")

@@ -16,11 +16,11 @@ namespace CrudMvvm1.Models
         [SQLite.NotNull]
         public string Nombre { get; set; }
 
-        public string Proveedor { get; set; }
+        public string Direccion { get; set; }
 
-        public double Precio_compra { get; set; }
+        public string Celular { get; set; }
 
-        public double Total { get; set; }
+        public string Pais { get; set; }
 
 
     }

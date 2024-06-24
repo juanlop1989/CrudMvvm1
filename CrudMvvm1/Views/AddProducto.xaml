@@ -7,17 +7,17 @@
              
              Title="Listado de Productos">
     <VerticalStackLayout Padding="30,0,30,0" Spacing="5" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
-        <Label Text="Nombre Producto:" />
+        <Label Text="Nombre Proveedor:" />
         <Entry Text="{Binding Nombre}" Keyboard="Text" />
 
-        <Label Text="Proveedor:" />
-        <Entry Text="{Binding Proveedor}" Keyboard="Text" />
+        <Label Text="Direccion:" />
+        <Entry Text="{Binding Direccion}" Keyboard="Text" />
 
-        <Label Text="Precio Compra" />
-        <Entry Text="{Binding Precio_compra}" Keyboard="Numeric" />
+        <Label Text="Celular" />
+        <Entry Text="{Binding Celular}" Keyboard="Text" />
 
-        <Label Text="Total" />
-        <Entry Text="{Binding Total}" Keyboard="Numeric" />
+        <Label Text="Pais" />
+        <Entry Text="{Binding Pais}" Keyboard="Text" />
 
 
         <Button Text="Guardar" Command="{Binding AddUpdateCommand}" />
